@@ -1,3 +1,3 @@
 gata
 ====
-gata.herokuapp.com
+http://gata.herokuapp.com
