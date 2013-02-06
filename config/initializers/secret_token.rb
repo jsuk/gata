@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-App::Application.config.secret_token = 'f874fbb13606ec88eb19c65900f135c9fbe03d8e2c38bd7260a737f9c3231e3e5bb6c4a5ef7a866cbe9ae24e2394a526b74b9cc9ee0c5cdc598c84da20bb431a'
+Gata::Application.config.secret_token = '98b2da27d3e733927ae8326ea0878955e8b0ee6f0efe96260485b242b2281df3092ba0e5c733ca252665140b625ba8375cefe26890e9976db68c98d6916df0f7'
