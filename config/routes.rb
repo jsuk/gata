@@ -1,5 +1,6 @@
 Gata::Application.routes.draw do
   get "home/index"
+  get 'home/page' => 'home#page'
   get 'home/page/:id' => 'home#page'
   #get 'home/page/:id' do
   #    @id = params[:id]
