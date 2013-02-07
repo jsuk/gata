@@ -1,0 +1,2 @@
+{"ts":1360085280527,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"source :rubygems\ngem 'sinatra', '1.1.0'\ngem 'thin'"]],"start1":0,"start2":0,"length1":0,"length2":50}]],"length":50}
+{"contributors":[],"silentsave":false,"ts":1360085285174,"patch":[[{"diffs":[[0,"m 'thin'"],[1,"\ngem \"haml\", \">= 2.2.0\""]],"start1":42,"start2":42,"length1":8,"length2":31}]],"length":73,"saved":false}
