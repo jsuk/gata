@@ -7,8 +7,11 @@
     %h1 Hello, @id
     %h1 Hello, #{@id}!
     %h1= "Hello, #{@id}!"
-    %h1(class = @id)="Hello, " + @id + "!"
-    %h1{:id => @id}= "Hello, " + @id + "!"
+    - if @id == nil then
+      %h1{}="id is nil"
+    - else
+      %h1(class = @id)="Hello, " + @id + "!"
+      %h1{:id => @id}= "Hello, " + @id + "!"
   %table
     %tr
       - @items.each do |item|
