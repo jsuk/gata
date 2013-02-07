@@ -1,6 +1,10 @@
 Gata::Application.routes.draw do
   get "home/index"
-  get "home/page"
+  get 'home/page/:id' => 'home#page'
+  #get 'home/page/:id' do
+  #    @id = params[:id]
+  #    @items = ['red', 'green', 'yellow']
+  #end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
