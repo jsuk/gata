@@ -1,21 +1,168 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html {
+  padding: 0px;
+  margin: 0px;
+  vertical-align: middle;
+}
+
+* {
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  -webkit-print-color-adjust: exact;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  color: #1c599f;
+  background-image: url("../../ArtWork/Old_paper.jpg");
+  background-image: url("http://www.wildtextures.com/wp-content/uploads/2011/11/wildtextures-old-paper-texture-2-1280x853.jpg");
+  background-image: url("http://www.publicdomainpictures.net/pictures/20000/velka/rough-beige-paper-texture.jpg");
+  background-image: url("http://th05.deviantart.net/fs71/PRE/f/2012/183/f/5/paper_texture_ii_by_eravariel-d55p6fh.png");
+  background-repeat: repeat;
+  background-size: 100%;
+  padding: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.monthRow {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+  padding: 0;
+  overflow: auto;
+}
+
+.yearName {
+  float: right;
+  color: #8b3a16;
+  font-size: small;
+  vertical-align: text-bottom;
+  padding-top: 18px;
+  bottom: 0px;
+}
+
+.monthName {
+  color: #a6946a;
+  font-size: small;
+}
+
 .red {
-  background: red;
+  color: #8b3a16;
 }
+
+.blue {
+  color: #1c599f;
+}
+
 .green {
-  background: green;
+  color: #1b5c2a;
 }
-.yellow {
-  background: yellow;
+
+h1 {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  text-align: center;
+  font-size: 3.25em;
+  color: #a6946a;
+  margin: 0px;
 }
-#red {
-  background: red;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 0.5em;
+  border: 0px;
 }
-#green {
-  background: green;
+
+.tablePadding {
+  margin-left: 0.7em;
+  margin-right: 0.7em;
 }
-#yellow {
-  background: yellow;
+
+.tableHeadPadding {
+  margin-left: 0px;
+  margin-right: 0.7em;
+}
+
+.tableTailPadding {
+  margin-left: 1.0em;
+  margin-right: 0px;
+}
+
+caption {
+  padding-left: 0em;
+  padding-right: 0em;
+  font-size: 2.0em;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mcal {
+  border: inset 0px;
+  float: left;
+  font-size: medium;
+  th {
+    width: 1.0em;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 0px;
+    padding-right: 1px;
+    padding-left: 1px;
+    margin: 0px;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  td {
+    width: 1.0em;
+    height: 1.0em;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+}
+
+.ycal {
+  border: dotted 0px;
+  font-size: medium;
+  td {
+    width: 2em;
+    text-align: right;
+  }
+}
+
+th {
+  width: 2em;
+  text-align: right;
+}
+
+.sun {
+  color: #8b3a16;
+}
+
+.sat {
+  color: #1b5c2a;
+}
+
+.hol {
+  color: #a6946a;
+}
+
+td {
+  text-align: center;
+  line-height: 100%;
 }
