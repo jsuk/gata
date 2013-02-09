@@ -2,21 +2,13 @@
 !!!
 %html{html_attrs('ja')}
   %head
-    %title= @id 
-  %body
-    %h1 Hello, @id
-    %h1 Hello, #{@id}!
-    %h1= "Hello, #{@id}!"
-    - if @id == nil then
-      %h1{}="id is nil"
-    - else
-      %h1(class = @id)="Hello, " + @id + "!"
-      %h1{:id => @id}= "Hello, " + @id + "!"
-  %table
-    %tr
-      - @items.each do |item|
-        %td= item
-  - foo = "Thank you"
-  - foo << " very"
-  - foo += " much!"
-  %p= foo
+    %title="Calendar of year @id"
+  %body#cal
+  %header
+    %h1
+      %span#yearinheader{}#{@id} 
+      %span.blue{}>=' calendarier'
+      \-
+      %span.red{}><='calendar'
+      \-
+      %span.green{}><='calendario'
