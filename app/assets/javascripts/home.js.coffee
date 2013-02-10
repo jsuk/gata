@@ -99,8 +99,8 @@ make_cal_monthly = (year, m) ->
 
       while h < hl
         
-        ##console.log(monthNames[m],holidays[m][h] , d);
-        if d % 7 isnt weekdayToEnd and holidays[m][h] is cal[m][d]
+        console.log(monthNames[m],holidays[m][h] , d);
+        if holidays[m][h] is cal[m][d]
           td.className = "hol"
           break
         h++
