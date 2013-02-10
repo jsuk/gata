@@ -50,9 +50,46 @@ body {
   bottom: 0px;
 }
 
+
 .monthName {
   color: #a6946a;
   font-size: small;
+}
+.JANUARY {
+  @extend .monthName;
+}
+.FEBUARY {
+  @extend .monthName;
+}
+.MARCH {
+  @extend .monthName;
+}
+.APRIL {
+  @extend .monthName;
+}
+.MAY {
+  @extend .monthName;
+}
+.JUNE {
+  @extend .monthName;
+}
+.JULY {
+  @extend .monthName;
+}
+.AUGUST {
+  @extend .monthName;
+}
+.SEPTEMBER {
+  @extend .monthName;
+}
+.OCTOBER {
+  @extend .monthName;
+}
+.NOVEMBER {
+  @extend .monthName;
+}
+.DECEMBER {
+  @extend .monthName;
 }
 
 .red {

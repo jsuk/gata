@@ -24,7 +24,6 @@ make_cal_array = (year) ->
 weekdayToStart = 1
 weekdayToEnd = (weekdayToStart + 6) % 7
 
-ynames = ['MON','TUE','WED','THU','FRI','SAT','SUN'];
 make_cal_yearly = (year) ->
   cal = make_cal_array(year)
   tbody = document.createElement("tbody")
@@ -124,7 +123,7 @@ make_cal_monthly = (year, m) ->
   caption = document.createElement("caption")
   month = document.createElement("span")
   yearPostfix = document.createElement("span")
-  month.className = "monthName"
+  month.className = monthName(m) + ' monthName'
   month.innerHTML = " " + monthName(m)
   yearPostfix.className = "yearName"
   yearPostfix.innerHTML = year
@@ -175,5 +174,33 @@ init = ->
   #y.innerHTML = year.toString()
   console.log year
   make_calendars year, o
+daynames_es = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"]
+daynames_fr = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"]
+monthNames_es = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+monthNames_fr = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 $ ->
   init()
+  days = document.getElementsByTagName('th')
+  months = document.getElementsByClassName('monthName')
+  console.log months
+  spanish.onclick = ->
+    for day in days
+      index = daynames.indexOf(day.className.toUpperCase())
+      day.innerHTML = daynames_es[index].toUpperCase()
+    for month in months
+      index = monthNames.indexOf(month.className.replace(/\s*monthName\s*/g,'').toUpperCase())
+      month.innerHTML = ' ' + monthNames_es[index].toUpperCase()
+  english.onclick = ->
+    for day in days
+      index = daynames.indexOf(day.className.toUpperCase())
+      day.innerHTML = daynames[index]
+    for month in months
+      index = monthNames.indexOf(month.className.replace(/\s*monthName\s*/g,'').toUpperCase())
+      month.innerHTML = ' ' + monthNames[index].toUpperCase()
+  french.onclick = ->
+    for day in days
+      index = daynames.indexOf(day.className.toUpperCase())
+      day.innerHTML = daynames_fr[index].toUpperCase()
+    for month in months
+      index = monthNames.indexOf(month.className.replace(/\s*monthName\s*/g,'').toUpperCase())
+      month.innerHTML = ' ' + monthNames_fr[index].toUpperCase()
