@@ -100,7 +100,7 @@ make_cal_monthly = (year, m) ->
       while h < hl
         
         console.log(monthNames[m],holidays[m][h] , d);
-        if holidays[m][h] is cal[m][d]
+        if (d + weekdayToStart) % 7 isnt 0 and holidays[m][h] is cal[m][d]
           td.className = "hol"
           break
         h++
